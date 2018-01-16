@@ -5,13 +5,39 @@
                 background-image: url('background.jpg');
                 background-size: cover;
                 background-position-y: center;
-                color: white;
+                font-family: sans-serif;
+                margin: 0;
+            }
+
+            .alert {
+                background-color: rgba(255, 255, 255, 0.60);
+                margin: 2rem;
+                overflow: hidden;
+            }
+
+            .heading {
+                background-color: rgba(255, 255, 255, 0.50);
+            }
+
+            .heading .time {
+                float: right;
             }
         </style>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <p id="text"></p>
-        <img src="./test.1.png" style="border: solid 1px red">
+        <div class="alert">
+            <div class="heading">
+                <div class="time">
+                        <span id="minAgo"/>m ago
+                </div>
+                <div class="appTitle">
+                    <img src="data:" alt="app icon"/>
+                    EMERGENCY ALERTS
+                </div>
+            </div>
+            <div id="text">
+                WINTER IS COMING. SEEK IMMEDIATE SHELTER. THIS IS NOT A DRILL.
+            </div>
+        </div>
     </body>
 </html>
