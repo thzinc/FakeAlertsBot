@@ -1,0 +1,54 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    background-color: black;
+}
+.background {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position-y: center;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.alert {
+    position: fixed;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.60);
+    margin: 5rem 2rem;
+    overflow: hidden;
+    border-radius: 30px;
+    padding: 1.5rem;
+}
+
+.heading {
+    font-size: 1.6rem;
+}
+
+.heading img {
+    vertical-align: middle;
+    padding-bottom: 5px;
+}
+
+.heading .time {
+    float: right;
+    font-size: 0.8em
+}
+
+.alert h1 {
+    margin: 1rem 0 0;
+    font-weight: 450;
+}
+
+.alert p {
+    font-size: 2rem;
+    margin: 0;
+}
