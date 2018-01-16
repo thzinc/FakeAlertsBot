@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style type="text/css">
+            body {
+                background-image: url('background.jpg');
+                background-size: cover;
+                background-position-y: center;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+        <p id="text"></p>
+        <img src="./test.1.png" style="border: solid 1px red">
+        <script>
+            window.addEventListener('load', () => {
+                let text = document.getElementById('text');
+                let query = location.search
+                    .split(/[\?\&]+/)
+                    .reduce((o, p) => {
+                        let [name, value] = p.split('=', 2);
+                        o[name] = unescape(value);
+                        return o;
+                    }, {})
+                text.innerText = query['text'];
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "fakealertsbot",
+  "version": "0.0.1",
+  "description": "A bot that generates fake iOS emergency alerts",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel James",
+  "license": "MIT",
+  "dependencies": {
+    "phantomjs-prebuilt": "^2.1.16",
+    "phantomjs2": "^2.2.0",
+    "webshot": "^0.18.0"
+  }
+}
