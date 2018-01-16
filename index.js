@@ -4,6 +4,7 @@ const Twitter = require('twitter');
 const messages = [
     'WINTER IS COMING. SEEK SHELTER IMMEDIATELY. THIS IS NOT A DRILL.',
     'THE ROBBER IS COMING. HIDE YOUR RESOURCES. A SEVEN WAS ROLLED.',
+    'YOU ARE ON THE WAY TO DESTRUCTION. (WHAT YOU SAY!!) YOU HAVE NO CHANCE TO SURVIVE MAKE YOUR TIME.',
 ];
 
 const selectedMessage = messages[Math.floor(Math.random() * messages.length)];
