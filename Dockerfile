@@ -5,6 +5,11 @@ ENV CONSUMER_SECRET _
 ENV ACCESS_TOKEN_KEY _
 ENV ACCESS_TOKEN_SECRET _
 
-COPY . /bot
 WORKDIR /bot
+COPY package.json .
+COPY package-lock.json .
 RUN npm install
+
+COPY . /bot
+
+CMD npm run start
